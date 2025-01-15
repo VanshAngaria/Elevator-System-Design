@@ -36,13 +36,13 @@ public class Main {
             if(choice == 2) {
                 input = new Scanner(System.in);
                 System.out.println("Enter the floor where elevator is requested from (0 to 15): ");
-                int reqestFloor = input.nextInt();
+                int requestFloor = input.nextInt();
 
                 input = new Scanner(System.in);
                 System.out.println("Enter the destination floor(0 to 15): ");
                 int targetFloor = input.nextInt();
 
-                ElevatorRequest elevatorRequest = new ElevatorRequest(reqestFloor, targetFloor);
+                ElevatorRequest elevatorRequest = new ElevatorRequest(requestFloor, targetFloor);
                 Elevator elevator = elevatorRequest.submitRequest();
 
 

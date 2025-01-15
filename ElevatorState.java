@@ -1,5 +1,8 @@
 import java.util.*;
 
-public class ElevatorState {
-
+public enum ElevatorState {
+    UP,
+    DOWN,
+    STATIONARY,
+    MAINTAINANCE
 }
